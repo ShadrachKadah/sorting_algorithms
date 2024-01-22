@@ -26,7 +26,7 @@ listint_t *create_listint(const int *array, size_t size)
 	*tmp = array[size];
 	node->next = list;
 	node->prev = NULL;
-	ist = node;
+	list = node;
 	if (list->next)
 	list->next->prev = list;
 	}
